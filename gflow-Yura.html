@@ -7,16 +7,35 @@
 </head>
 <body>
     <h1>Моя сторінка з контейнерами</h1>
-    <div class="cont1">Контейнер 1</div>
-
+    <div class="main-container">
+        <div class="cont1">Контейнер 1</div>
+        <div class="cont2">Контейнер 2</div>
+    </div>
     <style>
-        .cont1 {
+        .main-container {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            height: 120px;
+            width: 80%;
+            border: 1px solid;
+            border-radius: 5px;
+            justify-content: flex-start;
+        }
+        .main-container > div {
+            margin-left: 5px;
             height: 100px;
             width: 100px;
-            background-color: chartreuse;
             border: 1px solid;
             text-align: center;
         }
+        .cont1 {
+            background-color: forestgreen;
+        }
+        .cont2 {
+            background-color: rgb(117, 123, 174);
+        }
+        
     </style>
 </body>
 </html>
